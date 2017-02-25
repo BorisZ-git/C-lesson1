@@ -17,9 +17,25 @@ namespace test
             var name = Console.ReadLine();
             Console.WriteLine("Ваш возраст?");
             var age = Console.ReadLine();
+            Console.WriteLine("Ваш рост?");
+            var height = Console.ReadLine();
             Console.WriteLine("Ваш вес?");
             var weight = Console.ReadLine();
-            Console.WriteLine(name + " Вам " + age + " и Ваш вес равен " + weight);
+
+            Console.WriteLine("Вывод переменных склеиванием:");
+            //with glue, use \n for free space
+            Console.WriteLine(name + " Вам " + age + " и Ваш рост "
+                + height + " а вес равен " + weight + "\n");
+
+            Console.WriteLine("Форматированный вывод переменных:");
+            // Convert for formating write   
+            double a = Convert.ToDouble(age);
+            double h = Convert.ToDouble(height);
+
+            Console.WriteLine("{0} Вам {1} Ваш вес {2:f1} а рост {3}",
+                name, (int)a, Convert.ToDouble(weight), (int)h); //Convert in WriteLine
+
+
 
             Console.ReadLine(); // don't give programm close
         }
