@@ -1,4 +1,5 @@
 ﻿using System;
+
 //Boris Zn
 /*
  * Ввести вес и рост человека.
@@ -12,15 +13,20 @@ namespace test2
     {
         static void Main()
         {
-            //records variables(записываем переменные)
-            Console.WriteLine("Добрый день! Программа поможет Вам вывести вашу ИМТ");
-            Console.WriteLine("Введите ваш рост в см");
-            string height = Console.ReadLine();
-            Console.WriteLine("Ваш вес в килограммах");
-            string weight = Console.ReadLine();
-            // set cm to m(приводим см к метрам)
-            // m = 100 cm 
-            double h = (Convert.ToInt32(height)) / 100;
+            //Hello
+            Console.WriteLine("Привет! Эта программа поможет тебе высчитать твой ИМТ");
+            //records variables(запись переменнных)
+            Console.Write("Введите рост в см: ");
+            //1m = 100cm
+            double h = double.Parse(Console.ReadLine())/100;
+            Console.Write("Введите ваш в вес в килограммах: ");
+            double m = double.Parse(Console.ReadLine());
+            //count
+            double i = m / (h * h);
+            //show IMT
+            Console.WriteLine("Ваш ИМТ равен: {0:f1}", i);
+            //don't give the window close before the see result
+            Console.ReadLine();
 
         }
     }
