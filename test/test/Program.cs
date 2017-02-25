@@ -28,16 +28,15 @@ namespace test
                 + height + " а вес равен " + weight + "\n");
 
             Console.WriteLine("Форматированный вывод переменных:");
-            // Convert for formating write   
+            //Convert for formating write   
             double a = Convert.ToDouble(age);
             double h = Convert.ToDouble(height);
-
+            //Convert in WriteLine
             Console.WriteLine("{0} Вам {1} Ваш вес {2:f1} а рост {3}",
-                name, (int)a, Convert.ToDouble(weight), (int)h); //Convert in WriteLine
+                name, (int)a, Convert.ToDouble(weight), (int)h);
 
-
-
-            Console.ReadLine(); // don't give programm close
+            // don't give programm close
+            Console.ReadLine(); 
         }
     }
 }
