@@ -31,7 +31,7 @@ namespace test5
             Console.WriteLine("Приятно познакомиться {0}!Ваша фамилия {1},Вы проживаете в городе {2}"
                 , Name, SecondName, City);            
             //set cursor to centre(задаем позицию на экране)
-            Console.SetCursorPosition(15, 7);
+            Console.SetCursorPosition(25, 7);
             //show on cursor position(пишет на заданной позиции)
             Console.WriteLine("Приятно познакомиться {0}!Ваша фамилия {1},Вы проживаете в городе {2}"
     , Name, SecondName, City);
