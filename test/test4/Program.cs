@@ -9,12 +9,12 @@ namespace test4
 {
     class Program
     {
-        //use method for show answer
+        //hide method for show answer
         static void Print(double a, double b)
         {
             Console.WriteLine("Первая переменная = {0} Вторая переменная = {1}", a, b);
         }
-        //use rule of incapsulasion
+        //hide method
         static void Do(double a,double b)
         {
             do
