@@ -30,7 +30,7 @@ namespace test3
             Console.WriteLine("Сейчас мы сделаем теже рассчеты,"
                 + "только в программе это будет реализованно с помощью метода");
             Console.WriteLine("{0:f2}", Count(x1, x2, y1, y2));
-            //don't give window close before we see result(до нажатия энтера висит окно)
+            //don't give window close before we see result(до нажатия клавиши висит окно)
             Console.ReadKey();
         }
         //realize method (реализуем метод)
