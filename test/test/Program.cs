@@ -1,5 +1,5 @@
 ﻿using System;
-// Boris Zn
+// Boris Z
 /*
  *  Написать программу “Анкета”.
  *   Последовательно задаются вопросы (имя, фамилия, возраст,  рост, вес). 
@@ -13,6 +13,7 @@ namespace test
     {
         static void Main()
         {
+            //records variable(запись переменных)
             Console.WriteLine("Добрый день! Введите ваши ФИО");
             var name = Console.ReadLine();
             Console.WriteLine("Ваш возраст?");
@@ -21,7 +22,7 @@ namespace test
             var height = Console.ReadLine();
             Console.WriteLine("Ваш вес?");
             var weight = Console.ReadLine();
-
+            //show
             Console.WriteLine("Вывод переменных склеиванием:");
             //with glue, use \n for free space
             Console.WriteLine(name + " Вам " + age + " и Ваш рост "

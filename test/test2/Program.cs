@@ -1,6 +1,6 @@
 ﻿using System;
 
-//Boris Zn
+//Boris Z
 /*
  * Ввести вес и рост человека.
  *  Расчитать и вывести индекс массы тела(ИМТ) по формуле  I=m/(h*h);
@@ -24,7 +24,16 @@ namespace test2
             //count
             double i = m / (h * h);
             //show IMT
-            Console.WriteLine("Ваш ИМТ равен: {0:f1}", i);
+            Console.Write("Ваш ИМТ равен: {0:f1}", i);
+            //interpretation IMT
+            if (i <= 16) Console.WriteLine(" Выраженный дефицит массы тела");
+            if (i <= 18 && i > 16) Console.WriteLine(" Недостаточная(дефицит) масса тела");
+            if (i > 18 && i <= 25) Console.WriteLine(" Норма");
+            if (i > 25 && i <= 30) Console.WriteLine(" Избыточная масса тела (предожирение)");
+            if (i > 30 && i <= 35) Console.WriteLine(" Ожирение первой степени");
+            if (i > 35 && i <= 40) Console.WriteLine(" Ожирение второй степени");
+            if (i > 40 && i <= 45) Console.WriteLine(" Ожирение третьей степени (морбидное)");
+            if (i > 45) Console.WriteLine(" Кто ты такой жир?");
             //don't give the window close before the see result
             Console.ReadLine();
 
