@@ -38,7 +38,7 @@ namespace test5
             //use method(используем написанный метод передавая ему данные)
             Print(Name,SecondName,City, 25, 17);
             //don't give window close
-            Console.ReadKey();
+            Console.ReadKey();            
         }
     }
 }

@@ -9,12 +9,34 @@ namespace test6
     {
         static void Main()
         {
+            //C этими логическими операторами вообще ни чего не понятно.
+            // ^ | & !
+            // как они вообще числа могут сравнивать и получать какой-то результат. =)))
+            int a = 123;
+            int b = 876;
+            a ^= b;
+            Print(a.ToString());
+            b ^= a;
+            Print(b.ToString());
+            a ^= b;
+            Print(a.ToString());
 
+            Pause();
         }
-        public void Print (string msg, int x, int y)
+        static void Print(string msg)
+        {
+            Console.WriteLine(msg);
+        }
+        static void Print(string msg, int x, int y)
         {
             Console.SetCursorPosition(x, y);
             Console.WriteLine(msg);
         }
+        static void Pause()
+        {
+            Console.WriteLine("Нажмите любую клавишу для закрытия окна");
+            Console.ReadLine();
+        }
+
     }
 }
